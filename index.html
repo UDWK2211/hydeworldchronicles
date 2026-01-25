@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyde World Chronicles</title>
+
+  <script>
+    (function () {
+      const voices = [
+        "/barbara/en.html",
+        "/alexander/en.html"
+      ];
+
+      const choice = Math.floor(Math.random() * voices.length);
+      window.location.replace(voices[choice]);
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/barbara/en.html">
+  </noscript>
+</head>
+<body style="background:black;">
+</body>
+</html>
