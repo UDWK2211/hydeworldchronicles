@@ -87,7 +87,7 @@ body.barbara::before {
  opacity: 0.5;
 filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
 
-  z-index: 0;
+  z-index: -1;
   pointer-events: none;
 }
 
