@@ -1,84 +1,46 @@
-/* Reset básico */
-body {
+/* =========================
+   RESET BÁSICO
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
   min-height: 100vh;
   background-color: #000;
+  color: #e6cfa3; /* tom quente do texto */
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* =========================
+   FUNDO DE ESTRELAS (GLOBAL)
+   ========================= */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
   background-image:
     radial-gradient(1px 1px at 20% 30%, #fff, transparent),
     radial-gradient(1px 1px at 80% 70%, #fff, transparent),
     radial-gradient(1px 1px at 50% 50%, #fff, transparent);
+
   background-repeat: repeat;
-  color: #e6cfa3; /* tom quente */
-  font-family: "Times New Roman", Times, serif;
-    position: relative;
+  opacity: 0.15;
+
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Conteúdo */
-.content {
-  max-width: 700px;
-  margin: 6rem auto;
-  padding: 0 1.5rem;
-}
-
-.text p {
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-/* Idiomas */
-.language-switch {
-  position: fixed;
-  top: 1.5rem;
-  right: 2rem;
-  font-size: 0.9rem;
-}
-
-.language-switch a {
-  color: #cfa76e;
-  text-decoration: none;
-  margin: 0 0.3rem;
-  opacity: 0.7;
-}
-
-.language-switch a.active,
-.language-switch a:hover {
-  opacity: 1;
-}
-
-/* Assinaturas */
-.signature {
-  margin-top: 3rem;
-  text-align: right;
-}
-
-/* Barbara */
-body.barbara .signature {
-  font-family: "Palace Script MT", "Brush Script MT", cursive;
-  font-size: 2rem;
-  color: #c06a6a;
-}
-
-/* Alexander */
-body.alexander .signature {
-  font-family: "Ink Free", "Segoe UI", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.15em;
-  color: #7a8896;
-}
-@media (max-width: 768px) {
-  body {
-    font-size: 30px;
-  }
-
-  .content {
-    padding: 20px;
-  }
-
-  .text {
-    line-height: 1.5;
-  }
-}
 /* =========================
    FUNDO ATMOSFÉRICO — ALEXANDER
    ========================= */
@@ -87,37 +49,68 @@ body.alexander::before {
   content: "";
   position: fixed;
   inset: 0;
+
   background-image: url("../images/alexander-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.15;
-  filter: blur(6px) saturate(80%) brightness(70%) hue-rotate(200deg);
+  opacity: 0.28;
+  filter: blur(3px) saturate(85%) brightness(90%) hue-rotate(200deg);
 
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
 /* =========================
-   FUNDO ATMOSFÉRICO — BARBARA
-   (PREPARADO, DESLIGADO)
+   CONTEÚDO
    ========================= */
 
-/*
-body.barbara::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("../images/barbara-bg.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.content {
+  position: relative;
+  z-index: 2;
 
-  opacity: 0.14;
-  filter: blur(6px) saturate(85%) brightness(75%) hue-rotate(-20deg);
-
-  z-index: -1;
-  pointer-events: none;
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
 }
-*/
+
+.text p {
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+}
+
+/* =========================
+   ASSINATURAS
+   ========================= */
+
+/* Alexander */
+body.alexander .signature {
+  margin-top: 3rem;
+  text-align: right;
+
+  font-family: "Ink Free", "Segoe UI", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  color: #7a8896;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 28px;
+  }
+
+  .content {
+    margin: 4rem auto;
+    padding: 0 1.25rem;
+  }
+
+  .text p {
+    line-height: 1.5;
+  }
+}
