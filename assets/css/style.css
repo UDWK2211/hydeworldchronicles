@@ -79,13 +79,13 @@ body.barbara::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../images/barbara-bg.avif");
+  background-image: url("../images/barbara-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.35;
-  filter: blur(2px) saturate(110%) brightness(90%) hue-rotate(-15deg);
+ opacity: 0.5;
+filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
 
   z-index: 0;
   pointer-events: none;
