@@ -41,7 +41,7 @@ body::after {
   background-repeat: repeat;
   opacity: 0.15;
 
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
 }
 
