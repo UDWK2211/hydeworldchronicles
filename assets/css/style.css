@@ -64,6 +64,8 @@ body.alexander::before {
 
 body.alexander {
   color: #b8c2cc; /* cinza azulado do Alexander */
+}
+
 /* =========================
    CONTEÚDO
    ========================= */
@@ -122,6 +124,7 @@ body.alexander .signature {
   }
 
   .text p {
-    line-height: 1.5;
+    font-size: 1.25rem;
+    line-height: 1.6;
   }
 }
