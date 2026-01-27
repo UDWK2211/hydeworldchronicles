@@ -71,6 +71,27 @@ body.alexander {
 }
 
 /* =========================
+   FUNDO ATMOSFÉRICO – BARBARA
+   ========================= */
+
+body.barbara::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("../images/barbara-bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.35;
+  filter: blur(2px) saturate(110%) brightness(90%) hue-rotate(-15deg);
+
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* =========================
    CONTEÚDO
    ========================= */
 }
