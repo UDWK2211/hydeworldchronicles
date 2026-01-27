@@ -55,8 +55,8 @@ body.alexander::before {
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.28;
-  filter: blur(3px) saturate(85%) brightness(90%) hue-rotate(200deg);
+  opacity: 0.45;
+  filter: blur(1.5px) saturate(95%) brightness(95%) hue-rotate(200deg);
 
   z-index: 0;
   pointer-events: none;
