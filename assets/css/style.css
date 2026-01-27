@@ -131,14 +131,10 @@ body.alexander .signature {
 
 @media (max-width: 768px) {
 
-  html {
-  font-size: 20px;
-}
-
-   body.alexander {
+     body.alexander {
     color: #b8c2cc;
    }
-
+   
   .content {
     margin: 4rem auto;
     padding: 0 1.25rem;
@@ -149,7 +145,6 @@ body.alexander .signature {
   }
 
   .text p {
-    font-size: 1.35rem;
-    line-height: 1.6;
-  }
+    font-size: 1.6rem;   /* ajuste aqui depois */
+    line-height: 1.7;
 }
