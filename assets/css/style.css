@@ -107,7 +107,7 @@ body.alexander .signature {
 @media (max-width: 768px) {
 
   body {
-    font-size: 90px;
+    font-size: 36px;
   }
 
    body.alexander {
@@ -124,7 +124,7 @@ body.alexander .signature {
   }
 
   .text p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     line-height: 1.6;
   }
 }
