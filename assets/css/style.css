@@ -62,9 +62,12 @@ body.alexander::before {
   pointer-events: none;
 }
 
+body.alexander {
+  color: #b8c2cc; /* cinza azulado do Alexander */
 /* =========================
    CONTEÚDO
    ========================= */
+}
 
 .content {
   position: relative;
