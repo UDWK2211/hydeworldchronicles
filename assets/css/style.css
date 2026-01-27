@@ -136,13 +136,10 @@ body.alexander .signature {
    }
    
   .content {
-    margin: 4rem auto;
-    padding: 0 1.25rem;
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  margin: 4rem auto;
+  padding: 0 1.25rem;
+  min-height: 90vh;
+}
 
   body.alexander .text p {
   font-size: 1.4rem;
