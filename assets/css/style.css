@@ -146,6 +146,10 @@ body.alexander .signature {
      body.alexander {
     color: #b8c2cc;
    }
+
+    body.barbara {
+    color: #e6cfa3; /* tom quente da Barbara */
+  }
    
   .content {
   margin: 4rem auto;
@@ -154,6 +158,11 @@ body.alexander .signature {
 }
 
   body.alexander .text p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+   body.barbara .text p {
   font-size: 1.4rem;
   line-height: 1.7;
 }
