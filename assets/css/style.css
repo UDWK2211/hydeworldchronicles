@@ -108,6 +108,10 @@ body.alexander .signature {
     font-size: 28px;
   }
 
+   body.alexander {
+    color: #b8c2cc;
+   }
+
   .content {
     margin: 4rem auto;
     padding: 0 1.25rem;
