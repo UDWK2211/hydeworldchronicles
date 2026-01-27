@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* =========================
    FUNDO DE ESTRELAS (GLOBAL)
    ========================= */
@@ -106,9 +110,9 @@ body.alexander .signature {
 
 @media (max-width: 768px) {
 
-  body {
-    font-size: 36px;
-  }
+  html {
+  font-size: 20px;
+}
 
    body.alexander {
     color: #b8c2cc;
