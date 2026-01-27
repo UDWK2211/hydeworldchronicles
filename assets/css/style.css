@@ -104,6 +104,18 @@ filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
   margin: 6rem auto;
   padding: 0 1.5rem;
 }
+/* Desktop – leitura confortável */
+@media (min-width: 769px) {
+    body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+   
+.content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
 
 .text p {
   line-height: 1.6;
