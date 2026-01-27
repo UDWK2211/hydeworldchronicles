@@ -11,6 +11,7 @@ body {
   background-repeat: repeat;
   color: #e6cfa3; /* tom quente */
   font-family: "Times New Roman", Times, serif;
+    position: relative;
 }
 
 /* Conteúdo */
@@ -78,3 +79,45 @@ body.alexander .signature {
     line-height: 1.5;
   }
 }
+/* =========================
+   FUNDO ATMOSFÉRICO — ALEXANDER
+   ========================= */
+
+body.alexander::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/alexander-bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.15;
+  filter: blur(6px) saturate(80%) brightness(70%) hue-rotate(200deg);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* =========================
+   FUNDO ATMOSFÉRICO — BARBARA
+   (PREPARADO, DESLIGADO)
+   ========================= */
+
+/*
+body.barbara::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../images/barbara-bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.14;
+  filter: blur(6px) saturate(85%) brightness(75%) hue-rotate(-20deg);
+
+  z-index: -1;
+  pointer-events: none;
+}
+*/
