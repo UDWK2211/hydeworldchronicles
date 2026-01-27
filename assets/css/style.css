@@ -65,3 +65,16 @@ body.alexander .signature {
   letter-spacing: 0.15em;
   color: #7a8896;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 28px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .text {
+    line-height: 1.5;
+  }
+}
