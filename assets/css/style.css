@@ -191,3 +191,26 @@ body.vamp .signature {
     transform: translateY(0);
   }
 }
+/* =====================
+   FADE IN — MAGE
+===================== */
+
+.fade-mage {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeMage 2.8s ease-out forwards;
+}
+
+/* Sequência mais lenta e espaçada */
+.mage-1 { animation-delay: 1.8s; }
+.mage-2 { animation-delay: 2.8s; }
+.mage-3 { animation-delay: 3.8s; }
+.mage-4 { animation-delay: 4.8s; }
+.mage-5 { animation-delay: 5.8s; }
+
+@keyframes fadeMage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
