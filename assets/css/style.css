@@ -150,22 +150,46 @@ body.vamp .signature {
   }
 }
 
-/* =========================
+/* =====================
    MOBILE
-   ========================= */
+===================== */
 
 @media (max-width: 768px) {
 
+  /* ===== BASE ===== */
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* ===== FUNDO BARBARA (VAMP) ===== */
+  body.vamp::before,
+  body.vamp::after {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  body.vamp::before {
+    filter: blur(3px) saturate(110%) brightness(95%);
+  }
+
+  /* ===== CONTEÚDO ===== */
   .content {
     margin: 4rem auto;
     padding: 0 1.25rem;
-    min-height: 90vh;
+    min-height: auto;
+    position: relative;
+    z-index: 2;
   }
 
+  /* ===== TEXTO ===== */
   .text p {
     font-size: 1.4rem;
     line-height: 1.7;
   }
+
 }
 
 /* =========================
