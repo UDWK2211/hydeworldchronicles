@@ -207,6 +207,7 @@ body.vamp .signature {
 .mage-3 { animation-delay: 3.8s; }
 .mage-4 { animation-delay: 4.8s; }
 .mage-5 { animation-delay: 5.8s; }
+.mage-6 { animation-delay: 6.8s; }
 
 @keyframes fadeMage {
   to {
