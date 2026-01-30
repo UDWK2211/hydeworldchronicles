@@ -93,6 +93,29 @@ body.vamp {
   color: #e6cfa3; /* tom quente */
 }
 
+/* LYCAN */
+body.lycan::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("../images/lycan-bg.png"); /* ajuste extensão se necessário */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.55;
+  filter: blur(1.8px) saturate(105%) brightness(90%) contrast(105%);
+
+  z-index: -2;
+  pointer-events: none;
+}
+
+body.lycan {
+  color: #d8d0c2; /* tom mais cru / lunar */
+}
+
+
 /* =========================
    CONTEÚDO
    ========================= */
@@ -132,6 +155,11 @@ body.mage .signature {
 /* Vamp */
 body.vamp .signature {
   color: #e6cfa3;
+}
+
+/* Lycan */
+body.lycan .signature {
+  color: #d8d0c2;
 }
 
 /* =========================
@@ -192,6 +220,19 @@ body.vamp .signature {
 
 }
 
+  /* ===== FUNDO LYCAN ===== */
+  body.lycan::before,
+  body.lycan::after {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  body.lycan::before {
+    filter: blur(3.5px) saturate(105%) brightness(88%);
+  }
+
 /* =========================
    FADE-IN DE TEXTO
    ========================= */
@@ -234,6 +275,29 @@ body.vamp .signature {
 .mage-6 { animation-delay: 6.8s; }
 
 @keyframes fadeMage {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   FADE IN — LYCAN
+===================== */
+
+.fade-lycan {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeLycan 2.2s ease-out forwards;
+}
+
+.lycan-1 { animation-delay: 1.0s; }
+.lycan-2 { animation-delay: 1.7s; }
+.lycan-3 { animation-delay: 2.4s; }
+.lycan-4 { animation-delay: 3.1s; }
+.lycan-5 { animation-delay: 3.8s; }
+
+@keyframes fadeLycan {
   to {
     opacity: 1;
     transform: translateY(0);
