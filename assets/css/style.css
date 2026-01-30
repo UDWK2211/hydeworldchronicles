@@ -196,36 +196,6 @@ body.vamp::after {
   pointer-events: none;
 }
 
-/* LYCAN */
-body.lycan {
-  background-image: url("../images/bgs/lycan-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  color: #d8d0c2;
-  position: relative;
-}
-
- body.lycan {
-  color: #d8d0c2;
-}
-   
-/* OVERLAY ESCURO + BLUR */
-body.lycan::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.5); /* levemente mais escuro, clima lunar */
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-
-  z-index: -1;
-  pointer-events: none;
-}
-
 /* =========================
    CONTEÚDO (PÁGINAS INTERNAS)
    ========================= */
@@ -258,7 +228,7 @@ body.lycan::after {
 
 body.mage .signature { color: #7a8896; }
 body.vamp .signature { color: #e6cfa3; }
-body.lycan .signature { color: #d8d0c2; }
+
 
 /* =========================
    DESKTOP
@@ -288,8 +258,7 @@ body.lycan .signature { color: #d8d0c2; }
 
   body.vamp::before,
   body.vamp::after,
-  body.lycan::before,
-  body.lycan::after {
+
     position: absolute;
     inset: 0;
     min-height: 100vh;
@@ -299,11 +268,7 @@ body.lycan .signature { color: #d8d0c2; }
     filter: blur(3px) saturate(110%) brightness(95%);
   }
 
-  body.lycan::before {
-    filter: blur(3.5px) saturate(105%) brightness(88%);
-  }
-
-  .content {
+    .content {
     margin: 4rem auto;
     padding: 0 1.25rem;
   }
