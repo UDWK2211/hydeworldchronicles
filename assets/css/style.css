@@ -285,6 +285,21 @@ body.vamp .signature { color: #e6cfa3; }
 }
 
 /* =========================
+   AJUSTE DE TEXTO — LYCAN
+   ========================= */
+
+body.lycan .text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  body.lycan .text p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+}
+/* =========================
    FADE-INS (INALTERADOS)
    ========================= */
 
