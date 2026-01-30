@@ -150,7 +150,23 @@ body.mage {
   color: #b8c2cc;
 }
 
+/* =========================
+   VAMP — FUNDO + BLUR REAL
+   ========================= */
+
 body.vamp {
+  background: #000;
+  color: #e6cfa3;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* FUNDO DESFOCADO */
+body.vamp::before {
+  content: "";
+  position: fixed;
+  inset: -10px;
+
   background-image:
     linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.45)),
     url("../images/bgs/barbara-bg.png");
@@ -158,25 +174,18 @@ body.vamp {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
-  color: #e6cfa3;
-  position: relative;
+  filter: blur(2.5px);
+  transform: scale(1.05);
+
+  z-index: 0;
+  pointer-events: none;
 }
 
-/* OVERLAY ESCURO + BLUR */
-body.vamp::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.45);
-
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
-
-  z-index: -1;
-  pointer-events: none;
+/* CONTEÚDO ACIMA DO FUNDO */
+body.vamp > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* LYCAN */
