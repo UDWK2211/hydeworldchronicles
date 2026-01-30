@@ -154,38 +154,26 @@ body.mage {
    VAMP — FUNDO + BLUR REAL
    ========================= */
 
-body.vamp {
-  background: #000;
-  color: #e6cfa3;
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* FUNDO DESFOCADO */
 body.vamp::before {
   content: "";
   position: fixed;
-  inset: -10px;
+  inset: 0;
 
-  background-image:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.45)),
-    url("../images/bgs/barbara-bg.png");
-
+  background-image: url("../images/bgs/barbara-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  filter: blur(2.5px);
-  transform: scale(1.05);
+  opacity: 0.45;
+  filter: blur(1.5px) saturate(95%) brightness(95%) hue-rotate(200deg);
 
-  z-index: 0;
+  z-index: -2;
   pointer-events: none;
 }
 
-/* CONTEÚDO ACIMA DO FUNDO */
-body.vamp > * {
+body.vamp {
+  color: #e6cfa3;
   position: relative;
-  z-index: 1;
 }
 
 /* LYCAN */
