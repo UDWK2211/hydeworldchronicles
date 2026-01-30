@@ -161,8 +161,8 @@ body.vamp::before {
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.5;
-  filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
+  opacity: 1;
+filter: none;
 
   z-index: -2;
   pointer-events: none;
