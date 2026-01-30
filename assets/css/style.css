@@ -289,14 +289,14 @@ body.vamp .signature { color: #e6cfa3; }
    ========================= */
 
 body.lycan .text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.55;
 }
 
 @media (max-width: 768px) {
   body.lycan .text p {
-    font-size: 1.3rem;
-    line-height: 1.7;
+    font-size: 1.2rem;
+    line-height: 1.45;
   }
 }
 /* =========================
