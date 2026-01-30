@@ -134,7 +134,7 @@ body.mage::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../images/alexander-bg.avif");
+  background-image: url("../images/bgs/alexander-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,6 +148,50 @@ body.mage::before {
 
 body.mage {
   color: #b8c2cc;
+}
+
+/* VAMP */
+body.vamp::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("../images/bgs/barbara-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.5;
+  filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
+
+  z-index: -2;
+  pointer-events: none;
+}
+
+body.vamp {
+  color: #e6cfa3;
+}
+
+/* LYCAN */
+body.lycan::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("../images/bgs/lycan-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.55;
+  filter: blur(1.8px) saturate(105%) brightness(90%) contrast(105%);
+
+  z-index: -2;
+  pointer-events: none;
+}
+
+body.lycan {
+  color: #d8d0c2;
 }
 
 /* VAMP */
