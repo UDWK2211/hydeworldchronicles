@@ -156,7 +156,7 @@ body.vamp::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../images/bgs/barbara-bg.png");
+  background-image: url("../images/bgs/barbara-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ body.lycan::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../images/bgs/lycan-bg.png");
+  background-image: url("../images/bgs/lycan-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
