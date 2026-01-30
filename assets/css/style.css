@@ -150,9 +150,11 @@ body.mage {
   color: #b8c2cc;
 }
 
-/* VAMP */
 body.vamp {
-  background-image: url("../images/bgs/barbara-bg.png");
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.65)),
+    url("../images/bgs/barbara-bg.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
