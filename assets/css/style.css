@@ -151,29 +151,41 @@ body.mage {
 }
 
 /* =========================
-   VAMP — FUNDO + BLUR REAL
+   VAMP — FUNDO + BLUR REAL (FINAL)
    ========================= */
 
+body.vamp {
+  background: #000;
+  color: #e6cfa3;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* FUNDO DESFOCADO */
 body.vamp::before {
   content: "";
   position: fixed;
-  inset: 0;
+  inset: -10px;
 
-  background-image: url("../images/bgs/barbara-bg.png");
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.45)),
+    url("../images/bgs/barbara-bg.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  opacity: 0.45;
-  filter: blur(1.5px) saturate(95%) brightness(95%) hue-rotate(200deg);
+  filter: blur(2.5px);
+  transform: scale(1.05);
 
-  z-index: -2;
+  z-index: -1;          /* ← ESSA LINHA É A CHAVE */
   pointer-events: none;
 }
 
-body.vamp {
-  color: #e6cfa3;
+/* GARANTE CONTEÚDO ACIMA */
+body.vamp > * {
   position: relative;
+  z-index: 1;
 }
 
 /* LYCAN */
