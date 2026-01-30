@@ -156,13 +156,13 @@ body.vamp::before {
   position: fixed;
   inset: 0;
 
-  background-image: url("../images/bgs/barbara-bg.jpg");
+  background-image: url("../images/bgs/barbara-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   opacity: 1;
-filter: none;
+  filter: none;
 
   z-index: -2;
   pointer-events: none;
