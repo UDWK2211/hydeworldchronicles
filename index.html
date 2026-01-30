@@ -4,22 +4,38 @@
   <meta charset="UTF-8">
   <title>Hyde World Chronicles</title>
 
-  <script>
-    (function () {
-      const voices = [
-        "/vamp/en.html",
-        "/mage/en.html"
-      ];
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      const choice = Math.floor(Math.random() * voices.length);
-      window.location.replace(voices[choice]);
-    })();
-  </script>
-
-  <noscript>
-    <meta http-equiv="refresh" content="0; url=/vamp/en.html">
-  </noscript>
+  <!-- CSS virá depois -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body style="background:black;">
+
+<body>
+
+  <main class="landing">
+
+    <p class="opening-line">
+      Everything comes from choices.<br>
+      So it is only fair to begin by choosing.
+    </p>
+
+    <div class="pov-choices">
+
+      <a href="/vamp/en.html" class="pov">
+        <img src="assets/images/btm/vamp-btm.jpeg" alt="The Vampire">
+      </a>
+
+      <a href="/mage/en.html" class="pov">
+        <img src="assets/images/btm/mage-btm.jpeg" alt="The Mage">
+      </a>
+
+      <a href="/lycan/en.html" class="pov">
+        <img src="assets/images/btm/lycan-btm.jpeg" alt="The Lycan">
+      </a>
+
+    </div>
+
+  </main>
+
 </body>
 </html>
