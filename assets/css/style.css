@@ -151,24 +151,13 @@ body.mage {
 }
 
 /* VAMP */
-body.vamp::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
+body.vamp {
   background-image: url("../images/bgs/barbara-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 
-  opacity: 1;
-  filter: none;
-
-  z-index: -2;
-  pointer-events: none;
-}
-
-body.vamp {
   color: #e6cfa3;
 }
 
