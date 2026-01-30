@@ -208,25 +208,7 @@ body.lycan {
   position: relative;
 }
 
-   /* LYCAN */
-body.lycan::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("../images/lycan-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: 0.55;
-  filter: blur(1.8px) saturate(105%) brightness(90%) contrast(105%);
-
-  z-index: -2;
-  pointer-events: none;
-}
-
-body.lycan {
+ body.lycan {
   color: #d8d0c2;
 }
    
