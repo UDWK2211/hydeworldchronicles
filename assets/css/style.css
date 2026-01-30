@@ -161,6 +161,22 @@ body.vamp {
   background-attachment: fixed;
 
   color: #e6cfa3;
+  position: relative;
+}
+
+/* OVERLAY ESCURO + BLUR */
+body.vamp::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* LYCAN */
