@@ -162,43 +162,6 @@ body.vamp {
   position: relative;
 }
 
-/* OVERLAY ESCURO + BLUR */
-body.vamp::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(2px);
-
-  z-index: -1;
-  pointer-events: none;
-}
-
-/* LYCAN */
-body.lycan::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("../images/bgs/lycan-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: 0.55;
-  filter: blur(1.8px) saturate(105%) brightness(90%) contrast(105%);
-
-  z-index: -2;
-  pointer-events: none;
-}
-
-body.lycan {
-  color: #d8d0c2;
-}
-
-/* VAMP */
 body.vamp::before {
   content: "";
   position: fixed;
@@ -218,9 +181,34 @@ body.vamp::before {
 
 body.vamp {
   color: #e6cfa3;
+
+/* OVERLAY ESCURO + BLUR */
+body.vamp::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* LYCAN */
+body.lycan {
+  background-image: url("../images/bgs/lycan-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #d8d0c2;
+  position: relative;
+}
+
+   /* LYCAN */
 body.lycan::before {
   content: "";
   position: fixed;
@@ -240,6 +228,20 @@ body.lycan::before {
 
 body.lycan {
   color: #d8d0c2;
+}
+   
+/* OVERLAY ESCURO + BLUR */
+body.lycan::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5); /* levemente mais escuro, clima lunar */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* =========================
