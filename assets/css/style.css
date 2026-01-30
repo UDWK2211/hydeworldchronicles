@@ -161,27 +161,6 @@ body.vamp {
   color: #e6cfa3;
   position: relative;
 }
-
-body.vamp::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("../images/barbara-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: 0.5;
-  filter: blur(1.5px) saturate(115%) brightness(95%) hue-rotate(-12deg);
-
-  z-index: -2;
-  pointer-events: none;
-}
-
-body.vamp {
-  color: #e6cfa3;
-
 /* OVERLAY ESCURO + BLUR */
 body.vamp::after {
   content: "";
@@ -190,6 +169,32 @@ body.vamp::after {
 
   background: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* LYCAN */
+body.lycan {
+  background-image: url("../images/bgs/lycan-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #d8d0c2;
+  position: relative;
+}
+
+/* OVERLAY ESCURO + BLUR */
+body.lycan::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 
   z-index: -1;
