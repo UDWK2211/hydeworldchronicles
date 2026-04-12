@@ -33,7 +33,7 @@ body.index {
   justify-content: center;
   align-items: center;
 
-  background: url("../images/bgs/bg-stars.jpg") center / cover no-repeat fixed;
+  background: url("../images/bgs/bg-stars.mp4") center / cover no-repeat fixed;
   color: #eaeaea;
 }
 
@@ -152,7 +152,7 @@ body.mage {
 
 /* VAMP */
 body.vamp {
-  background-image: url("../images/bgs/barbara-bg.png");
+  background-image: url("../images/bgs/barbara-bg.mp4");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
