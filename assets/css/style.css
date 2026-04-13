@@ -77,10 +77,10 @@ body.index::after {
 
 /* OLHOS */
 .index .pov {
-  width: 160px;
-  height: 90px;
+  width: 80px;
+  height: 45px;
 
-  max-width: 40vw;
+  max-width: 20vw;
   cursor: pointer;
   overflow: hidden;
 }
