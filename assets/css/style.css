@@ -40,9 +40,8 @@ body {
    ===================================================== */
 
 body.index {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+}
 
   /* Remove fundos atmosféricos no index */
 body.index::before,
@@ -55,6 +54,8 @@ body.index::after {
   text-align: center;
   max-width: 1000px;
   padding: 2rem;
+
+  margin: 0 auto; /* adiciona essa linha */
 }
 
 /* FRASE DE ABERTURA */
@@ -76,8 +77,8 @@ body.index::after {
 
 /* OLHOS */
 .index .pov {
-  width: 180px;
-  height: 100px; /* ESSENCIAL */
+  width: 160px;
+  height: 90px;
 
   max-width: 40vw;
   cursor: pointer;
